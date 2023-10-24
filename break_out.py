@@ -4,12 +4,12 @@ from pygame.locals import *
 pygame.init()
 screen = pygame.display.set_mode((900,800))
 pygame.display.set_caption("breaking bricks")
-bat = pygame.image.load(os.path.join('/Users/gregorirodriguez/Desktop/Games/brake out /images/DurrrSpaceShip.png'))
+bat = pygame.image.load(os.path.join('/Users/gregorirodriguez/Desktop/Games/break_out/images/DurrrSpaceShip.png'))
 bat = bat.convert_alpha() 
 bat_rect = bat.get_rect()
 bat_rect[1] = screen.get_height() - 100
 
-ball = pygame.image.load(os.path.join('/Users/gregorirodriguez/Desktop/Games/brake out /images/Fire-Ball.png'))
+ball = pygame.image.load(os.path.join('/Users/gregorirodriguez/Desktop/Games/break_out/images/Fire-Ball.png'))
 ball = ball.convert_alpha() 
 ball_rect = ball.get_rect()
 ball_start = (450, 400)
@@ -22,7 +22,7 @@ ball_spriteheight = 150
 
 ball = pygame.transform.scale(ball,(ball_spriteWidth,ball_spriteheight))
 
-brick = pygame.image.load(os.path.join('/Users/gregorirodriguez/Desktop/Games/brake out /images/ship_blue.png'))
+brick = pygame.image.load(os.path.join('/Users/gregorirodriguez/Desktop/Games/break_out/images/ship_blue.png'))
 brick = brick.convert_alpha() 
 brick_rect = brick.get_rect()
 
